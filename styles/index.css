@@ -1,0 +1,91 @@
+body{
+    margin:0px;
+    padding:0px;
+}
+#navbar{
+    z-index: 4;
+    position: sticky;
+    border:1px solid black;
+    display:flex;
+    justify-content: space-between;
+    padding:10px;
+    align-items: center;
+    height:40px;
+    top:0;
+   background-color:white;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.menu, .search, .tabs{
+    display:flex;
+    align-items:center;
+}
+
+   .search,.img{
+    height:auto;
+    width:40px;
+}
+.logo{
+    width:130px;
+}
+.search{
+    width:45%;
+    height:45px;
+}
+.search>input{
+    width:90%;
+    height:30px;
+
+}
+.search>*{
+    height:35px;
+}
+.search>button{
+    margin-right: 15px;
+}
+
+#container{
+    position:relative;
+    left:16%;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:auto;
+    gap: 20px;
+    width:80%;
+    margin:30px ;
+}
+#container>div>img{
+    width:100%;
+}
+.tabs>*{
+    height:30px;
+    width:100%
+}
+
+/*  For menu items*/
+
+#menu{
+    z-index: 3;
+    position: fixed;
+    width:15%;
+    height:680px;
+    text-align:center;
+    background-color:white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#menu>a{
+    display:flex;
+    margin-top:0px;
+    margin-bottom:0px;
+    padding: 0;
+    height: 40px;
+    text-decoration: none;
+    padding-left: 30px;
+    align-items:center;
+    color:black;
+}
+#menu>a>img{
+    width:17px;
+    height:17px;
+    margin-right:10px;
+}
